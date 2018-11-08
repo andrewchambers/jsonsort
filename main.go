@@ -26,6 +26,27 @@ var (
 const DELIM = 0x02
 
 func main() {
+
+	flag.Usage = func() {
+		flag.PrintDefaults()
+
+		fmt.Fprintf(os.Stderr, `
+Examples:
+	$ cat data.jsonl
+	[{"key":"1kb","b":2}]
+	[{"key":"1gb","b":1}]
+
+	# Sort by first element in array and field 'key' using human numeric sorting (see coreutils manual).
+	$ jsonsort -method human-numeric 0 key < data.jsonl
+	[{"key":"1gb","b":1}]
+	[{"key":"1kb","b":2}]
+
+	# Sort nobel laureates by first name.
+	curl http://api.nobelprize.org/v1/prize.json | jq -c .prizes[].laureates | jsonsort -ignore-case firstname
+`)
+		os.Exit(1)
+	}
+
 	flag.Parse()
 
 	keyPath := flag.Args()
