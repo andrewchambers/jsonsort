@@ -1,0 +1,4 @@
+github.com/valyala/fastjson v1.0.0 h1:dekaySeQ9d+6IICq1d8/31kh0mg+WgcMt1FaCv+xY/Y=
+github.com/valyala/fastjson v1.0.0/go.mod h1:nV6MsjxL2IMJQUoHDIrjEI7oLyeqK6aBD7EFWPsvP8o=
+golang.org/x/sync v0.0.0-20181108010431-42b317875d0f h1:Bl/8QSvNqXvPGPGXa2z5xUTmV7VDcZyvRZ+QQXkXTZQ=
+golang.org/x/sync v0.0.0-20181108010431-42b317875d0f/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
