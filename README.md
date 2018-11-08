@@ -60,7 +60,7 @@ the base dir.
 - The flags could be better designed, perhaps even a thinner wrapper
   where arbitrary sort flags can be passed through.
 - Be compatible with POSIX sort, not just gnu sort.
-
+- Man page.
 
 ## Packagers/maintainers
 
